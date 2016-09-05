@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2016 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="ct_modules" translate="label" sortOrder="200">
+            <label>CzoneTech Modules</label>
+        </tab>
+        <section id="ct_smtpmail" translate="label" type="text" sortOrder="40" showInDefault="1"
+                 showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>SMTP Settings</label>
+            <tab>ct_modules</tab>
+            <resource>CzoneTech_SmtpMail::config_smtp</resource>
+            <group id="settings" translate="label" type="text" sortOrder="90" showInDefault="1" showInWebsite="1"
+                   showInStore="1">
+                <label>SMTP Settings</label>
+                <field id="host" translate="label" type="text" sortOrder="10" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Host</label>
+                </field>
+                <field id="port" translate="label" type="text" sortOrder="10" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Port</label>
+                </field>
+                <field id="username" translate="label" type="text" sortOrder="10" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Username</label>
+                </field>
+                <field id="password" translate="label" type="text" sortOrder="10" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Password</label>
+                </field>
+                <field id="auth" translate="label" type="select" sortOrder="10" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Use SSL</label>
+                    <source_model>CzoneTech\SmtpMail\Model\Auth\Options</source_model>
+                </field>
+                <field id="use_ssl" translate="label" type="checkbox" sortOrder="10" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Use SSL</label>
+                </field>
+            </group>
+         </section>
+    </system>
+</config>
