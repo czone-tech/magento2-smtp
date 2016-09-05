@@ -3,6 +3,7 @@
 namespace CzoneTech\SmtpMail\Model;
 
 use Magento\Framework\Mail\TransportInterface;
+use Magento\Store\Model\ScopeInterface;
 
 class Transport extends \Zend_Mail_Transport_Smtp implements TransportInterface
 {
@@ -24,12 +25,12 @@ class Transport extends \Zend_Mail_Transport_Smtp implements TransportInterface
         if (!$message instanceof \Zend_Mail) {
             throw new \InvalidArgumentException('The message should be an instance of \Zend_Mail');
         }
-        $host = $scopeConfig->getValue('ct_smtpmail/settings/host');
-        $port = $scopeConfig->getValue('ct_smtpmail/settings/port');
-        $username = $scopeConfig->getValue('ct_smtpmail/settings/username');
-        $password = $scopeConfig->getValue('ct_smtpmail/settings/password');
-        $auth = $scopeConfig->getValue('ct_smtpmail/settings/auth');
-        $ssl = $scopeConfig->getValue('ct_smtpmail/settings/use_ssl')? 'ssl': 'tls';
+        $host = $scopeConfig->getValue('ct_smtpmail/settings/host', ScopeInterface::SCOPE_STORE);
+        $port = $scopeConfig->getValue('ct_smtpmail/settings/port', ScopeInterface::SCOPE_STORE);
+        $username = $scopeConfig->getValue('ct_smtpmail/settings/username', ScopeInterface::SCOPE_STORE);
+        $password = $scopeConfig->getValue('ct_smtpmail/settings/password', ScopeInterface::SCOPE_STORE);
+        $auth = $scopeConfig->getValue('ct_smtpmail/settings/auth', ScopeInterface::SCOPE_STORE);
+        $ssl = $scopeConfig->getValue('ct_smtpmail/settings/use_ssl', ScopeInterface::SCOPE_STORE)? 'ssl': 'tls';
 
 
         //set config
