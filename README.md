@@ -1,7 +1,9 @@
 ## SMTP module for Magento2
 Magento2 module for setting up and using SMTP mail
 
-All you need is either a (i) free Gmail account, (ii) paid Google Apps account or any other SMTP service (i.e Amazon Simple Email Service / Amazon SES )
+This enables you to use any SMTP server to deliver your magento emails. This module was tested with magento versions 2.0.x and 2.1.x, but should work for all magento 2.x versions.
+
+If you have any issues using this module, you may contact us at support@czonetechnologies.com
 
 ###Why SMTP?
 Most emails delivered using sendmail (default mail daemon used for sending mails on Linux) will either get blocked by an ISP or be flagged as SPAM. 
