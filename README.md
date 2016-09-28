@@ -27,8 +27,10 @@ composer require czone-tech/magento2-smtp
 
 ####2 -  Enabling the module
 Using command line access to your server, run the following commands -
+```
  $ php -f bin/magento module:enable --clear-static-content CzoneTech_SmtpMail
  $ php -f bin/magento setup:upgrade
+```
 
 ####3 - Admin configuration
 Log into your Magento Admin, then goto 
