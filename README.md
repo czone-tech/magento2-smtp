@@ -34,3 +34,4 @@ Log into your Magento Admin, then goto
 Enter the SMTP server settings
 
 ## Screenshot
+![image](https://cloud.githubusercontent.com/assets/1729518/18911185/372d6b4c-8599-11e6-926b-bca83dc0b266.png)
