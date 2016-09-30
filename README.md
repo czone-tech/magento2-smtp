@@ -21,8 +21,8 @@ By Using SMTP server for delivering emails, you can ensure quick and reliable de
 #####Using Composer
 
 ```
-composer config repositories.czone-tech-smtp git git@github.com:czone-tech/magento2-smtp.git
-composer require czone-tech/magento2-smtp
+composer config repositories.czone-tech composer https://repo.czonetechnologies.com
+composer require czone-tech/smtp-mail
 ```
 
 ####2 -  Enabling the module
