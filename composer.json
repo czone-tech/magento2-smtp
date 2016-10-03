@@ -1,5 +1,5 @@
 {
-  "name": "czone-tech/smtp-mail",
+  "name": "czonetech/smtp-mail",
   "description":"Configure Magento 2 to use SMTP server to send email",
   "keywords": [
     "magento 2",
