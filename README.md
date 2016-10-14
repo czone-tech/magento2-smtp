@@ -21,7 +21,6 @@ By Using SMTP server for delivering emails, you can ensure quick and reliable de
 #####Using Composer
 
 ```
-composer config repositories.czone-tech composer https://repo.czonetechnologies.com
 composer require czonetech/smtp-mail
 ```
 
